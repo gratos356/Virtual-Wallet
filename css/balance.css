@@ -1,0 +1,262 @@
+@import url(variable.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.banner{
+    background: var(--color-primario);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    border-bottom-left-radius: 50%; /* Radio de borde inferior izquierdo */
+    border-bottom-right-radius: 50%;
+}
+.banner img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-bottom-left-radius: 50%; /* Radio de borde inferior izquierdo */
+    border-bottom-right-radius: 50%;
+}
+
+.header {
+    width: 100%;
+    padding: 0 .5em;
+    /* height: 60px; */
+    /*background: darkgoldenrod;*/ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.header__logo {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.logo__icono {
+    /* background: green; */
+}
+
+.logo__icono img {
+    width: 3em;
+}
+
+.logo__titulo {
+    /* background: orange; */
+    color: var(--color-ternario);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: uppercase;
+}
+
+.header__menu {
+    /* background: darkblue; */
+}
+
+.header__menu i {
+    font-size: 3em;
+    color: var(--color-ternario);
+}
+
+.main{
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.main__top{
+    /*background: yellow;*/
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 31.5%;
+}
+
+
+.main__textocirculo{
+    background: var(--color-secundario);
+    width: 180px; /* ajusta el tamaño del círculo según tus necesidades */
+    height: 180px; /* ajusta el tamaño del círculo según tus necesidades */
+    border-radius: 50%;  /* para que sea un círculo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.main__textocirculo h4,
+.main__textocirculo p{
+    color: var(--color-ternario);
+    font-size: 1.3em;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+.main__textocirculo h4{
+    text-align: center;
+}
+
+.main__mid{
+    /*background: red;*/
+    width: 100%;
+    height: 10%;
+}
+
+.main__cuadros{
+    /*background: lightblue;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.main__cuadros button{
+    width: 5.5em;
+    height: 40%;
+    border-radius: 50px;
+    text-transform: capitalize;
+    border: 1px solid;
+}
+
+.main__cuadros .cuadro1{
+    background: var(--color-primario);
+    color: var(--color-ternario);
+    border: var(--color-primario);
+}
+
+.main__cuadros .cuadro2{
+    background: transparent;
+    color: var(--color-secundario);
+}
+
+.main__cuadros .cuadro3{
+    background: transparent;
+    color: var(--color-cuarto);
+}
+
+.main__midBottom{
+    /*background: rebeccapurple;*/
+    margin-top: 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.main__image{
+    /*background: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__image img{
+    width: 100%; /*Un intento de cuadrar el inicio y final de la imagen con las letras de la semana*/
+    height: 100%;
+}
+
+.main__week{
+    /*background: yellow;*/
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 17px;
+    text-transform: capitalize;
+}
+
+.main_bottom{
+    /*background: yellow;*/
+    margin-top: 70px;
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.main_bottom__icono{
+    /*background: lightblue;*/
+    color: var(--color-secundario);
+    position: absolute;
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+.main_bottom__icono i{
+    font-size: 25px;
+}
+
+.main_bottom__texto{
+    /*background: red;*/
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.main_bottom__texto h4{
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.main_bottom__texto p{
+    color: var(--color-cuarto);
+    font-size: 10.5px;
+}
+
+.main_bottom__tarjeta{
+    /*background: var(--color-primario);*/
+    width: 85%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bottom__tarjeta img{
+    width: 80%;
+    height: 80;
+}
+
+.footer {
+    width: 100%;
+    background: var(--color-primario);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img{
+    width: 2em;
+}
